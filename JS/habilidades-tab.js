@@ -4,7 +4,7 @@ function initHabilidadesTab(){
     const tabContent = document.querySelectorAll('.js-menudesc article')
 
     if(tabMenu.length && tabContent.length){
-        let msg = '/* Passe o mouse por cima de alguma habilidade para ler a descrição */' 
+        let msg = 'Passe o mouse por cima de alguma habilidade para ler a descrição' 
         if (window.innerWidth <= 800){
             msg = '/* Clique em alguma habilidade para ler a descrição */'
         } 
