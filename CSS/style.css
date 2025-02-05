@@ -156,6 +156,9 @@ p{
 }
 .ilustracao-principal img{
     max-width: 100%;
+    border: 5px solid #1C92FF;
+  border-radius: 50%;
+  display: block;
     
 }
 @keyframes animacaoy{
@@ -166,6 +169,7 @@ p{
 .links{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 /*Linkedin*/
@@ -243,6 +247,9 @@ p{
 .button-github:hover svg path {
     fill: #181717;
 }
+.wrap_button {
+    display: flex;
+  }
   
 /*Sobre mim*/
 .sobre-bg{
@@ -263,6 +270,10 @@ p{
 }
 .sobre-ilustracao img{
     width: 100%;
+    border: 2px solid #1C92FF;
+    border-radius: 5%;
+    display: block;
+    
 }
 .sobre-texto{
     font-size: 1.5em;
@@ -341,6 +352,7 @@ p{
 
 /*button-cv*/
 .button-cv {
+    
     width: 140px;
     height: 50px;
     font-size: 17px;
@@ -362,6 +374,7 @@ p{
 .button-cv{
     color: white;
 }
+
 .button-cv:hover {
     box-shadow: 8px 10px 0 #1b73bf;
     background: white;
@@ -375,6 +388,54 @@ p{
     transition: 0.4s;
 }
 .button-cv:hover span {
+    width: 30px;
+}
+
+.wrap_button {
+    display: flex;
+    justify-content: space-evenly;
+    
+} 
+
+.button-certificado {
+    
+    width: 140px;
+    height: 50px;
+    font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0 #000;
+    transition: 0.3s;
+    position: relative;
+    border: 1px solid #1C92FF;
+    border-radius: 10px;
+    background-color: #1C92FF;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+}
+.button-certificado{
+    
+    color: white;
+}
+.button-certificado:hover {
+    
+    box-shadow: 8px 10px 0 #1b73bf;
+    background: white;
+    border: 1px solid #1C92FF;
+    color: #1C92FF;
+}
+
+.button-certificado span {
+    
+    margin-left: 10px;
+    width: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.button-certificado:hover span {
     width: 30px;
 }
 
@@ -500,17 +561,20 @@ p{
 /*Projetos*/
 .projetos-bg{
     background-color:#22272F;
+    
 }
 .projetos{
     padding:  90px;
     max-width: 1264px;
     margin: 0 auto;
+    
 }
 .projetos h2{
     margin: 0;
     color: white;
     text-align: center;
     margin-bottom: 90px;
+    
 }
 .projeto-card{
     background-color: #e3e1e1;
@@ -522,9 +586,11 @@ p{
     overflow: hidden;
     height: 550px;
     transition: 0.35s;
+    
 }
 .projeto-card:hover .projeto-imagem{
-    transform: scale(1.07);
+    transform: scale(1.05);
+
 }
 .projeto-card:hover{
     box-shadow: 8px 10px 0 #3372ac;
@@ -534,18 +600,21 @@ p{
     padding: 40px;
     width: 50%;
     position: relative;
+    
 }
 .projeto-imagem{
-    width: 50%;
+    width: 30%;
     transition: 0.35s
 }
 .projeto-imagem img{
     display: block;
     height: 100%;
     max-height: 100%;
+    
 }
 .projeto-texto h3{
     font-size: 2.5rem;
+    
 }
 .barra{
     color: #1C92FF;
@@ -829,6 +898,7 @@ p{
     .links{
         justify-content: center;
     }
+    
 
     /*Sobre*/
     .sobre{
@@ -1056,7 +1126,7 @@ p{
     }
 
     /*button-cv*/
-    .button-cv {
+    .button-cv.button-certificado {
         width: 140px;
         height: 50px;
         font-size: 1rem;
@@ -1137,7 +1207,7 @@ p{
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
     .home{
         width: 100%;
     }
