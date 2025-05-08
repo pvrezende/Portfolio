@@ -527,6 +527,42 @@ p{
     justify-content: center;
     align-items: center;
 }
+.card6 i {
+    font-size: 7em;
+    cursor: pointer;
+    color: #68A063;
+    transition: 0.4s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card7 i {
+    font-size: 7em;
+    cursor: pointer;
+    color: #00758F;
+    transition: 0.4s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card8 i {
+    font-size: 7em;
+    cursor: pointer;
+    color: #68217A;
+    transition: 0.4s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card i:hover{
     transform: scale(1.08) rotate(360deg);
     color: white;
