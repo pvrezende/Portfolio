@@ -1,59 +1,71 @@
-@font-face{
-    font-family:'Onest-medium';
+@font-face {
+    font-family: 'Onest-medium';
     src: url('../Font/TTF/OnestMedium1602-hint.ttf') format('opentype'),
-         url('../Font/WOFF/OnestMedium1602-hint.woff') format('opentype');
+        url('../Font/WOFF/OnestMedium1602-hint.woff') format('opentype');
 }
-@font-face{
-    font-family:'Onest-regular';
+
+@font-face {
+    font-family: 'Onest-regular';
     src: url('../Font/TTF/OnestRegular1602-hint.ttf') format('opentype');
 }
-@font-face{
-    font-family:'Onest-light';
+
+@font-face {
+    font-family: 'Onest-light';
     src: url('../Font/TTF/OnestLight1602-hint.ttf') format('opentype');
 }
-a, button, .con-like, .card{
+
+a,
+button,
+.con-like,
+.card {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-h2{
+
+h2 {
     font-size: 3rem;
 }
-p{
+
+p {
     font-weight: 500;
 }
 
 /*Cabeçalho*/
-.cabecalho-bg{
+.cabecalho-bg {
     z-index: 3;
     position: fixed;
     width: 100%;
     background-color: rgba(65, 65, 65, 0.15);
-    box-shadow:  1px 1px  #fbfbfb32;
+    box-shadow: 1px 1px #fbfbfb32;
     backdrop-filter: blur(3px);
     text-shadow: 1px 1px 1px black;
     padding: 5px 0;
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 80%;
 }
-#nav ul{
+
+#nav ul {
     display: flex;
     font-size: 1.45rem;
 }
 
-#nav li{
+#nav li {
     margin: 0 10px;
 }
-#nav li a{
+
+#nav li a {
     transition: 0.3s;
     color: white;
 }
-#nav li a::after{
+
+#nav li a::after {
     content: '';
     display: block;
     width: 0;
@@ -61,34 +73,38 @@ p{
     background-color: white;
     transition: width .3s
 }
-#nav li a:hover::after{
+
+#nav li a:hover::after {
     width: 100%;
     transition: width .3s;
 }
-#nav ul:hover li a{
+
+#nav ul:hover li a {
     color: rgba(178, 178, 178, 0.88)
 }
 
-#nav ul li a:hover{
+#nav ul li a:hover {
     color: blue;
     transform: scale(1.5);
 }
+
 #btn-mobile {
     display: none;
     position: absolute;
     right: 7px;
     top: 7px;
     z-index: 5;
-    color:rgba(255, 255, 255, 0.835);
-  }  
+    color: rgba(255, 255, 255, 0.835);
+}
 
 /*Home*/
-.home-bg{
+.home-bg {
     background: linear-gradient(-114.13deg, #24201b 50%, rgba(34, 39, 47, 0.97) 45%);
     width: 100%;
-    
+
 }
-.home{
+
+.home {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,74 +115,91 @@ p{
     padding: 140px 0 80px 0;
     height: 100vh;
 }
-.titulo{
+
+.titulo {
     font-size: 1.5em;
     margin-right: 50px;
     color: rgb(255, 255, 255);
     flex: 1 1 700px;
 }
-.titulo h1{
+
+.titulo h1 {
     font-size: 1.5em;
 }
-.nome{
+
+.nome {
     font-size: 2em;
     border-right: 4px solid;
     box-sizing: content-box;
     animation: piscando 0.5s alternate infinite step-end;
 }
+
 @keyframes piscando {
     50% {
         border-color: transparent;
     }
 }
-.mao{
+
+.mao {
     font-size: 0.9em;
     display: inline-block;
     animation: girar 2.5s infinite;
 }
-@keyframes girar{
+
+@keyframes girar {
     0% {
         transform: rotate(0deg);
     }
+
     10% {
         transform: rotate(14deg);
     }
+
     20% {
         transform: rotate(-8deg);
     }
+
     30% {
         transform: rotate(14deg);
     }
+
     40% {
         transform: rotate(-4deg);
     }
+
     50% {
         transform: rotate(10deg);
     }
+
     60% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
 }
-.ilustracao-principal{
+
+.ilustracao-principal {
     width: 500px;
     animation: animacaoy 3.5s linear infinite alternate;
 }
-.ilustracao-principal img{
+
+.ilustracao-principal img {
     max-width: 100%;
     border: 5px solid #1C92FF;
-  border-radius: 50%;
-  display: block;
-    
+    border-radius: 50%;
+    display: block;
+
 }
-@keyframes animacaoy{
-    from{
+
+@keyframes animacaoy {
+    from {
         transform: translatey(-20px);
     }
 }
-.links{
+
+.links {
     display: flex;
     flex-wrap: wrap;
 
@@ -189,6 +222,7 @@ p{
     margin-right: 70px;
     font-size: 1.125rem;
 }
+
 .button-linkedin .text {
     color: white;
     font-weight: 700;
@@ -197,17 +231,21 @@ p{
     width: 100%;
     padding: auto;
 }
+
 .button-linkedin svg path {
     transition: 400ms;
 }
+
 .button-linkedin:hover {
     background-color: rgb(255, 255, 255);
     outline: 3px white solid;
-      
+
 }
+
 .button-linkedin:hover .text {
     color: #1C92FF;
 }
+
 .button-linkedin:hover svg path {
     fill: #1C92FF;
 }
@@ -228,34 +266,41 @@ p{
     transition: 400ms;
     font-size: 1.125rem;
 }
-.button-github .text{
+
+.button-github .text {
     color: white;
     font-weight: 700;
     font-size: 1em;
     transition: 400ms;
 }
+
 .button-github svg path {
     transition: 400ms;
 }
+
 .button-github:hover {
     background-color: white;
-      outline: 3px white solid;
+    outline: 3px white solid;
 }
-.button-github:hover .text{
+
+.button-github:hover .text {
     color: #181717;
 }
+
 .button-github:hover svg path {
     fill: #181717;
 }
+
 .wrap_button {
     display: flex;
-  }
-  
+}
+
 /*Sobre mim*/
-.sobre-bg{
+.sobre-bg {
     background-color: #22272F;
 }
-.sobre{
+
+.sobre {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -263,19 +308,22 @@ p{
     justify-content: space-between;
     padding: 80px 0;
 }
-.sobre-ilustracao{
+
+.sobre-ilustracao {
     max-width: 500px;
     min-width: 400px;
     animation: animacaoy 3.5s linear infinite alternate;
 }
-.sobre-ilustracao img{
+
+.sobre-ilustracao img {
     width: 100%;
     border: 2px solid #1C92FF;
     border-radius: 5%;
     display: block;
-    
+
 }
-.sobre-texto{
+
+.sobre-texto {
     font-size: 1.5em;
     color: white;
     line-height: 1.2;
@@ -283,76 +331,88 @@ p{
     min-width: 500px;
     margin-left: 40px;
 }
-.sobre-texto p{
-    font-family: 'Onest-regular', sans-serif ;
+
+.sobre-texto p {
+    font-family: 'Onest-regular', sans-serif;
     font-weight: 400;
     line-height: 1.2;
     font-size: 1.2rem;
 }
-.sobre-texto h2{
+
+.sobre-texto h2 {
     border-left: 5px solid #1C92FF;
     padding-left: 5px;
 }
-.raio{
+
+.raio {
     animation: raio 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
     display: inline-block;
     font-size: 1.3rem;
 }
-.vassoura{
+
+.vassoura {
     animation: animacao-vassoura 0.7s linear infinite alternate;
     display: inline-block;
     font-size: 1.3rem;
 }
-.foguete{
+
+.foguete {
     animation: animacao-foguete 1s linear infinite alternate;
     display: inline-block;
     font-size: 1.6rem;
     margin-left: 5px;
-    
+
 }
-@keyframes animacao-foguete{
-    from{
+
+@keyframes animacao-foguete {
+    from {
         transform: translatey(5px);
     }
 }
 
-@keyframes animacao-vassoura{
-    from{
+@keyframes animacao-vassoura {
+    from {
         transform: translate(2.5px, -3px);
     }
 }
+
 @keyframes raio {
     0%,
     100% {
         transform: rotate(0deg);
         transform-origin: 50% 50%;
     }
+
     10% {
         transform: rotate(8deg);
     }
+
     20%,
     40%,
     60% {
         transform: rotate(-10deg);
     }
+
     30%,
     50%,
     70% {
         transform: rotate(10deg);
     }
+
     80% {
         transform: rotate(-8deg);
     }
+
     90% {
         transform: rotate(8deg);
     }
-  }
-  
+}
+
 
 
 /*button-cv*/
 .button-cv {
-    
+
     width: 140px;
     height: 50px;
     font-size: 17px;
@@ -371,7 +431,7 @@ p{
     margin-top: 20px;
 }
 
-.button-cv{
+.button-cv {
     color: white;
 }
 
@@ -381,12 +441,14 @@ p{
     border: 1px solid #1C92FF;
     color: #1C92FF;
 }
+
 .button-cv span {
     margin-left: 10px;
     width: 0;
     overflow: hidden;
     transition: 0.4s;
 }
+
 .button-cv:hover span {
     width: 30px;
 }
@@ -394,11 +456,11 @@ p{
 .wrap_button {
     display: flex;
     justify-content: space-evenly;
-    
-} 
+
+}
 
 .button-certificado {
-    
+
     width: 140px;
     height: 50px;
     font-size: 17px;
@@ -416,12 +478,14 @@ p{
     color: white;
     margin-top: 20px;
 }
-.button-certificado{
-    
+
+.button-certificado {
+
     color: white;
 }
+
 .button-certificado:hover {
-    
+
     box-shadow: 8px 10px 0 #1b73bf;
     background: white;
     border: 1px solid #1C92FF;
@@ -429,41 +493,48 @@ p{
 }
 
 .button-certificado span {
-    
+
     margin-left: 10px;
     width: 0;
     overflow: hidden;
     transition: 0.4s;
 }
+
 .button-certificado:hover span {
     width: 30px;
 }
 
 /*Habilidades*/
-.habilidades-bg{
-    background-color:  #1B1F24;
+.habilidades-bg {
+    background-color: #1B1F24;
     color: white;
     padding: 60px 0;
 }
-.habilidades{
+
+.habilidades {
     width: 80%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.habilidades-bg h2{
+
+.habilidades-bg h2 {
     text-align: center;
     margin: 0;
     padding: 50px 0;
 }
-.habilidades-cards{
+
+.habilidades-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
+    /* Alterado para centralizar e espaçar melhor */
     max-width: 500px;
-    
+    gap: 20px;
+    /* Adicionado espaçamento entre os itens */
 }
+
 .card1 i {
     font-size: 7em;
     cursor: pointer;
@@ -515,6 +586,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 .card5 i {
     font-size: 7em;
     cursor: pointer;
@@ -527,6 +599,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 .card6 i {
     font-size: 7em;
     cursor: pointer;
@@ -539,6 +612,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 .card7 i {
     font-size: 7em;
     cursor: pointer;
@@ -551,6 +625,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 .card8 i {
     font-size: 7em;
     cursor: pointer;
@@ -563,56 +638,141 @@ p{
     justify-content: center;
     align-items: center;
 }
-.card i:hover{
-    transform: scale(1.08) rotate(360deg);
+
+/* Novas habilidades com SVG */
+.card9 {
+    /* MySQL */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card9 img {
+    width: 7em;
+    /* Ajuste o tamanho da imagem SVG */
+    height: 7em;
+    /* Ajuste o tamanho da imagem SVG */
+    transition: 0.4s;
+}
+
+.card10 {
+    /* PostgreSQL */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card10 img {
+    width: 7em;
+    /* Ajuste o tamanho da imagem SVG */
+    height: 7em;
+    /* Ajuste o tamanho da imagem SVG */
+    transition: 0.4s;
+}
+
+.card11 i {
+    /* AWS */
+    font-size: 7em;
+    cursor: pointer;
+    color: #FF9900;
+    /* Cor comum para AWS */
+    transition: 0.4s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect for all cards (including SVGs and Font Awesome icons) */
+.habilidades-cards div[class^="card"]:hover {
+    transform: scale(1.08);
+    /* Aplica a escala para todos os cards */
+}
+
+/* Efeitos de hover para os ícones Font Awesome */
+/* Estes blocos foram esvaziados ou removidos para evitar o aviso */
+/* Se quiser cor branca no hover, adicione 'color: white;' aqui: */
+/*
+.habilidades-cards div[class^="card"] i:hover {
     color: white;
 }
-.habilidades-texto{
+*/
+
+/* Efeitos de hover para as imagens SVG */
+/* Estes blocos foram esvaziados ou removidos para evitar o aviso */
+/*
+.habilidades-cards div[class^="card"] img:hover {
+    filter: brightness(0) invert(1); // Exemplo se quiser inverter cores do SVG no hover
+}
+*/
+
+
+.habilidades-texto {
     text-align: center;
     font-size: 1.6rem;
     margin-right: 30px;
-    flex: 1 1 700px; 
+    flex: 1 1 700px;
 }
-.js .js-menudesc article{
+
+.js .js-menudesc article {
     display: none;
 }
-.js-menudesc article.ativo{
+
+.js-menudesc article.ativo {
     display: block;
     animation: mostrar .5s forwards;
 }
+
 @keyframes mostrar {
     from {
         opacity: 0;
         transform: matrix3d(-30px, 0, 0);
     }
+
     to {
         opacity: 1;
         transform: matrix3d(0, 0, 0);
     }
 }
-.remove{
+
+.remove {
     display: none;
 }
 
 /*Projetos*/
-.projetos-bg{
-    background-color:#22272F;
-    
+.projetos-bg {
+    background-color: #22272F;
+
 }
-.projetos{
-    padding:  90px;
+
+.projetos {
+    padding: 90px;
     max-width: 1264px;
     margin: 0 auto;
-    
+
 }
-.projetos h2{
+
+.projetos h2 {
     margin: 0;
     color: white;
     text-align: center;
     margin-bottom: 90px;
-    
+
 }
-.projeto-card{
+
+.projeto-card {
     background-color: #e3e1e1;
     border-radius: 25px;
     border: 5px solid #3372ac;
@@ -620,42 +780,78 @@ p{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    height: 550px;
+    /* Removed fixed height, let content define height */
     transition: 0.35s;
-    
+    align-items: stretch;
+    /* Ensure children stretch to fill height */
 }
-.projeto-card:hover .projeto-imagem{
+
+.projeto-card:hover .projeto-imagem {
     transform: scale(1.05);
 
 }
-.projeto-card:hover{
+
+.projeto-card:hover {
     box-shadow: 8px 10px 0 #3372ac;
     transform: translateY(-15px) !important;
 }
+
 .projeto-texto {
     padding: 40px;
     width: 50%;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    flex-grow: 1;
+    /* Allow text content to grow */
 }
-.projeto-imagem{
+
+/* New wrapper for buttons to push them to the bottom */
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    /* Add some space above the buttons */
+    position: relative;
+    /* Make this a positioning context for .con-like */
+    margin-top: auto; /* Push the wrapper to the bottom */
+}
+
+.projeto-imagem {
     width: 30%;
-    transition: 0.35s
+    /* Removed fixed height, let it be flexible */
+    transition: 0.35s;
+    display: flex;
+    /* Make it a flex container to center image vertically if needed */
+    align-items: center;
+    /* Center image vertically */
+    justify-content: center;
+    /* Center image horizontally */
 }
-.projeto-imagem img{
+
+.projeto-imagem img {
     display: block;
-    height: 100%;
+    max-width: 100%;
+    /* Ensure image doesn't overflow */
+    height: auto;
+    /* Allow image height to adjust proportionally */
     max-height: 100%;
-    
+    /* Prevent image from growing beyond container */
+    object-fit: contain;
+    /* Ensure the entire image is visible within the box */
 }
-.projeto-texto h3{
+
+.projeto-texto h3 {
     font-size: 2.5rem;
-    
+
 }
-.barra{
+
+.barra {
     color: #1C92FF;
 }
-.projeto-texto p:nth-child(2){
+
+.projeto-texto p:nth-child(2) {
     font-size: 21px;
     color: white;
     background-color: #1C92FF;
@@ -665,9 +861,13 @@ p{
     font-style: italic;
     margin-bottom: 30px;
 }
-.projeto-texto p{
+
+.projeto-texto p {
     font-size: 1.5rem;
+    margin: 10px 0;
+    /* Adjusted margin for paragraphs */
 }
+
 /*Botão-Projeto*/
 .button-projeto {
     display: inline-block;
@@ -681,15 +881,19 @@ p{
     width: 130px;
     transition: all 0.3s;
     cursor: pointer;
-    position: absolute;
-    bottom: 30px;
+    position: static;
+    /* Change to static as it's now within .buttons-wrapper */
+    margin-right: 15px;
+    /* Add margin to separate from the like button */
 }
+
 .button-projeto span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.3s;
 }
+
 .button-projeto span:after {
     content: '»';
     position: absolute;
@@ -698,35 +902,40 @@ p{
     right: -15px;
     transition: 0.3s;
 }
-   
+
 .button-projeto:hover span {
     padding-right: 15px;
 }
-   
+
 .button-projeto:hover span:after {
     opacity: 1;
     right: 0;
-} 
+}
 
 /*Con-Like*/
 .con-like {
     --red: #1C92FF;
-    position: relative;
+    position: absolute;
+    /* Now absolute within .buttons-wrapper */
     width: 50px;
     height: 50px;
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
     z-index: 1;
+    bottom: 0px;
+    /* Adjust as needed */
+    right: 0px;
+    /* Adjust as needed */
 }
+
 .con-like .like {
     position: absolute;
+    /* Keep absolute within .con-like for its internal elements */
     width: 100%;
     height: 100%;
     opacity: 0;
     z-index: 2;
     cursor: pointer;
 }
+
 .con-like .checkmark {
     width: 60%;
     height: 100%;
@@ -734,61 +943,74 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 .con-like .outline,
 .con-like .filled {
     fill: var(--red);
     position: absolute;
 }
+
 .con-like .filled {
     animation: kfr-filled 0.5s;
-    display: none;
+    display: none; /* Adicionado para garantir que ele comece oculto */
 }
+
+/* NOVO: Garante que o coração preenchido esteja oculto quando o checkbox NÃO está marcado */
+.con-like .like:not(:checked) ~ .checkmark .filled {
+    display: none !important;
+}
+
+
 .con-like .celebrate {
     position: absolute;
     animation: kfr-celebrate 0.5s;
     animation-fill-mode: forwards;
     display: none;
 }
+
 .con-like .poly {
     stroke: var(--red);
     fill: var(--red);
 }
-.con-like .like:checked ~ .checkmark .filled {
+
+.con-like .like:checked~.checkmark .filled {
     display: block
 }
-.con-like .like:checked ~ .checkmark .celebrate {
+
+.con-like .like:checked~.checkmark .celebrate {
     display: block
 }
+
 @keyframes kfr-filled {
     0% {
-      opacity: 0;
-      transform: scale(0);
+        opacity: 0;
+        transform: scale(0);
     }
-  
+
     50% {
-      opacity: 1;
-      transform: scale(1.2);
+        opacity: 1;
+        transform: scale(1.2);
     }
 }
-  
+
 @keyframes kfr-celebrate {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
-  
+
     50% {
-      opacity: 0.8;
+        opacity: 0.8;
     }
-  
+
     100% {
-      transform: scale(1.2);
-      opacity: 0;
-      display: none;
+        transform: scale(1.2);
+        opacity: 0;
+        display: none;
     }
 }
 
 /*rodapé*/
-.footer-bg{
+.footer-bg {
     background-color: #1B1F24;
     display: inline-block;
     width: 100%;
@@ -797,7 +1019,8 @@ p{
     text-align: center;
     text-shadow: 1px 1px 1px black;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -807,32 +1030,38 @@ p{
     margin: 0 auto;
     max-width: 1250px;
 }
-.footer-nome{
+
+.footer-nome {
     display: flex;
     align-items: center;
     text-align: left;
     position: relative;
-    
+
 }
-.nome-b{
+
+.nome-b {
     font-size: 1.5rem;
 }
-.coroa{
+
+.coroa {
     width: 1.4em;
     margin-left: 3px;
     display: inline-block;
     position: absolute;
     margin: -6px 2px 2px 2px;
 }
-.coroa:hover{
+
+.coroa:hover {
     transform: rotate(360deg);
     transition: 0.35s;
 }
+
 .redes-sociais {
     display: flex;
     height: 70px;
     width: 270px;
 }
+
 .redes-sociais svg {
     position: absolute;
     display: flex;
@@ -845,7 +1074,11 @@ p{
     z-index: 1;
     cursor: pointer;
 }
-.redes-sociais .social-instagram,.redes-sociais .social-github,.redes-sociais .social-linkedin,.redes-sociais .social-wpp {
+
+.redes-sociais .social-instagram,
+.redes-sociais .social-github,
+.redes-sociais .social-linkedin,
+.redes-sociais .social-wpp {
     position: relative;
     display: flex;
     align-items: center;
@@ -857,110 +1090,129 @@ p{
     transition: 0.25s;
     border-radius: 50px;
 }
+
 .redes-sociais svg {
     transform: scale(1);
 }
+
 .redes-sociais .social-instagram:hover {
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
     animation: bounce_613 0.4s linear;
 }
+
 .redes-sociais .social-github:hover {
     background-color: #121314;
     animation: bounce_613 0.4s linear;
 }
+
 .redes-sociais .social-linkedin:hover {
     background-color: #0a66c2;
     animation: bounce_613 0.4s linear;
 }
+
 .redes-sociais .social-wpp:hover {
     background-color: #12a50b;
     animation: bounce_613 0.4s linear;
 }
-.js .js-scroll{
+
+.js .js-scroll {
     opacity: 0;
     transform: translate3d(-60px, 0, 0);
 }
-.js .js-scroll.ativo{
+
+.js .js-scroll.ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
     transition: .5s;
 }
-  
+
 @keyframes bounce_613 {
-  40% {
-    transform: scale(1.4);
-  }
-  
-  60% {
-    transform: scale(0.8);
-  }
-  
-  80% {
-    transform: scale(1.2);
-  }
-  
-  100% {
-    transform: scale(1);
-  }
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /*Media Query*/
 @media screen and (max-width: 1200px) {
+
     /*Home*/
-    .home-bg{
-        background:/* #1B1F24  */rgba(34, 39, 47, 0.97) ;
+    .home-bg {
+        background:
+            /* #1B1F24  */
+            rgba(34, 39, 47, 0.97);
         width: 100%;
 
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         text-align: center;
-        height: auto; 
-       }    
-    .titulo{
+        height: auto;
+    }
+
+    .titulo {
         margin-right: 0px;
         flex: 1 1 0;
     }
-    .ilustracao-principal{
+
+    .ilustracao-principal {
         width: 400px;
     }
-    .ilustracao-principal img{
+
+    .ilustracao-principal img {
         max-width: 100%;
     }
-    .links{
+
+    .links {
         justify-content: center;
     }
-    
+
 
     /*Sobre*/
-    .sobre{
+    .sobre {
         flex-direction: column;
     }
-    .sobre-ilustracao{
+
+    .sobre-ilustracao {
         max-width: 200px;
     }
-    .sobre-texto{
+
+    .sobre-texto {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: auto;   
-        margin: 0;     
+        width: auto;
+        margin: 0;
     }
-    .sobre-texto h2{
-        margin-bottom:20px ;
+
+    .sobre-texto h2 {
+        margin-bottom: 20px;
     }
-    .sobre-texto p{
+
+    .sobre-texto p {
         margin: 7px;
         line-height: 1.1;
     }
 
     /*Habilidade*/
-    .habilidades{
+    .habilidades {
         width: 80%;
         margin: 20px auto;
         display: flex;
@@ -968,97 +1220,118 @@ p{
         align-items: center;
         flex-direction: column;
     }
-    .habilidades-bg h2{
+
+    .habilidades-bg h2 {
         text-align: center;
         margin: 0;
         padding: 50px 0;
     }
-    .habilidades-cards{
+
+    .habilidades-cards {
         justify-content: center;
         max-width: 100%;
         padding-top: 250px;
     }
-    .habilidades-cards > .card:nth-child(4){
+
+    .habilidades-cards>.card:nth-child(4) {
         order: 1;
     }
-    .habilidades-texto{
+
+    .habilidades-texto {
         margin: 0px;
-        flex: 1 1 00px; 
+        flex: 1 1 00px;
         max-height: 10px;
     }
-    
+
     /*Projetos*/
-    .projetos{
-        padding:  67px;
+    .projetos {
+        padding: 67px;
         max-width: 1264px;
         margin: 0 auto;
     }
-    .projetos h2{
+
+    .projetos h2 {
         margin: 0;
         text-align: center;
         margin-bottom: 90px;
     }
-    .projeto-card{
+
+    .projeto-card {
         margin-bottom: 50px;
         justify-content: none;
-        max-height: 550px;
+        /* Removed min-height here for better responsiveness in smaller screens */
     }
 
     .projeto-texto {
         padding: 20px;
         width: 60%;
-    }
-    .projeto-imagem{
-        width: 41%;/**/
+        /* Adjusted padding-bottom, now handled by flexbox */
     }
 
-    .projeto-texto h3{
-        font-size: 2rem;
-        margin: 40px 0 0 0;/**/
+    .projeto-imagem {
+        width: 41%;
+        /**/
     }
-    .projeto-texto p:nth-child(2){
+
+    .projeto-texto h3 {
+        font-size: 2rem;
+        margin: 40px 0 0 0;
+        /**/
+    }
+
+    .projeto-texto p:nth-child(2) {
         margin-bottom: 0px;
     }
-    .projeto-texto p{
+
+    .projeto-texto p {
         font-size: 1.5rem;
-        margin: 40px 0;
+        margin: 10px 0;
+        /* Adjusted margin */
     }
 
     /*Rodapé*/
-    .footer{
+    .footer {
         font-size: 0.91em;
     }
-}    
+}
 
 @media screen and (max-width: 700px) {
+
     /*Cabecalho*/
-    .cabecalho-bg{
+    .cabecalho-bg {
         background-color: transparent;
-        box-shadow:  none;
+        box-shadow: none;
         backdrop-filter: none;
     }
-    #nav ul{
+
+    #nav ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 2rem;
         padding: 0;
     }
-    #nav ul li{
+
+    #nav ul li {
         margin: 15px;
     }
-    #nav li a:hover::after{
+
+    #nav li a:hover::after {
         width: 0%;
     }
-    #nav ul:hover li a{
+
+    #nav ul:hover li a {
         color: white
     }
-    #nav ul li a:hover{
-        color:#358fe4;
+
+    #nav ul li a:hover {
+        color: #358fe4;
     }
-    .logo{
+
+    .logo {
         display: none;
     }
+
     #menu {
         display: block;
         position: absolute;
@@ -1073,35 +1346,40 @@ p{
         overflow-y: hidden;
         backdrop-filter: blur(3px);
         background-color: #0000006f;
-      }
-      #nav.ativo #menu {
+    }
+
+    #nav.ativo #menu {
         height: calc(100vh + 40px);
         visibility: visible;
         overflow-y: auto;
         margin-top: 0;
-      }
-      #menu a {
+    }
+
+    #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid #1b72bf;
-      }
-      #btn-mobile {
+    }
+
+    #btn-mobile {
         display: flex;
         font-size: 1rem;
         border: none;
-        background:#1b73bf;
+        background: #1b73bf;
         cursor: pointer;
         gap: 0.5rem;
         transform: scale(1.1);
         border-radius: 20%;
         padding: 10px;
-      }
-      #hamburger {
+    }
+
+    #hamburger {
         border-top: 3px solid;
-        width: 20px;        
-      }
-      #hamburger::after,
-      #hamburger::before {
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
         content: '';
         display: block;
         width: 20px;
@@ -1110,33 +1388,45 @@ p{
         margin-top: 5px;
         transition: 0.3s;
         position: relative;
-      }
-      #nav.ativo #hamburger {
+    }
+
+    #nav.ativo #hamburger {
         border-top-color: transparent;
-      }
-      #nav.ativo #hamburger::before {
+    }
+
+    #nav.ativo #hamburger::before {
         transform: rotate(135deg);
-      }
-      #nav.ativo #hamburger::after {
+    }
+
+    #nav.ativo #hamburger::after {
         transform: rotate(-135deg);
         top: -8px;
-      }
+    }
+
     /*Home*/
-    .home{
+    .home {
         padding: 80px 0;
     }
-    .titulo h1{
-        font-size: 1.25em;/**/
+
+    .titulo h1 {
+        font-size: 1.25em;
+        /**/
     }
-    .nome{
-        font-size: 1.5em;/**/
+
+    .nome {
+        font-size: 1.5em;
+        /**/
     }
-    .mao{
-        font-size: 0.85em;/**/
+
+    .mao {
+        font-size: 0.85em;
+        /**/
     }
-    .ilustracao-principal{
+
+    .ilustracao-principal {
         width: 400px;
-    } 
+    }
+
     /*Linkedin*/
     .button-linkedin {
         padding: 5px 15px;
@@ -1149,13 +1439,15 @@ p{
     }
 
     /*Sobre mim*/
-    .sobre{
+    .sobre {
         width: 75%;
     }
-    .sobre-ilustracao{
+
+    .sobre-ilustracao {
         min-width: 90%;
     }
-    .sobre-texto{
+
+    .sobre-texto {
         font-size: 1.225em;
         min-width: auto;
         margin-left: 0px;
@@ -1170,88 +1462,148 @@ p{
     }
 
     /*Habilidades*/
-    .habilidades-bg{
+    .habilidades-bg {
         padding: 60px 0;
     }
 
-    .habilidades-bg h2{
+    .habilidades-bg h2 {
         text-align: center;
         margin: 0;
         padding: 50px 0 10px 0;
     }
-    .card i{
+
+    .card i {
         width: 140px;
-        height: 140px; 
+        height: 140px;
     }
-    .habilidades-texto{
+
+    /* Adaptação para SVG em telas menores */
+    .card9 img,
+    .card10 img {
+        width: 6em;
+        /* Ajuste para telas menores */
+        height: 6em;
+        /* Ajuste para telas menores */
+    }
+
+    .habilidades-texto {
         font-size: 1.4rem;
     }
-    .con-like{
+
+    .con-like {
         right: 0;
     }
 
     /*Projetos*/
-    .projetos{
-        padding:  67px 0;
+    .projetos {
+        padding: 67px 0;
         max-width: auto;
         margin: 0 auto;
         width: 80%;
     }
-    .projetos h2{
+
+    .projetos h2 {
         margin: 0;
         text-align: center;
         margin-bottom: 90px;
     }
-    .projeto-card{
+
+    .projeto-card {
         margin-bottom: 50px;
         justify-content: none;
-        max-height: 550px;
+        flex-direction: column;
+        /* Stack text and image vertically */
     }
 
     .projeto-texto {
         padding: 20px;
         width: 100%;
-    }
-    .projeto-imagem{
-        width: 40%;/**/
+        /* Text takes full width */
+        order: 1;
+        /* Ensure text comes before image if stacking */
     }
 
-    .projeto-texto h3{
-        font-size: 2rem;
-        margin: 40px 0 0 0;/**/
+    .projeto-imagem {
+        width: 100%;
+        /* Image takes full width */
+        max-height: 250px;
+        /* Limit height for mobile to prevent excessively large images */
+        margin-bottom: 20px;
+        /* Add space below image */
     }
-    .projeto-texto p:nth-child(2){
+
+    .projeto-imagem img {
+        height: 100%;
+        /* Make image fill the height of its constrained container */
+        object-fit: cover;
+        /* Cover the area, potentially cropping */
+    }
+
+    .projeto-texto h3 {
+        font-size: 2rem;
+        margin: 40px 0 0 0;
+        /**/
+    }
+
+    .projeto-texto p:nth-child(2) {
         font-size: 1rem;
         text-align: left;
         display: inline-block;
     }
-    .projeto-texto p{
+
+    .projeto-texto p {
         font-size: 1.21rem;
-        margin: 15px 0;
-    }
-    .button-projeto {
-        width: 115px;
+        margin: 10px 0;
+        /* Adjusted margin */
     }
 
-    .footer{
+    .button-projeto {
+        font-size: 0.9rem;
+        width: 115px;
+        position: static;
+        /* Ensure it's static in media queries too */
+        margin-right: 15px;
+    }
+
+    .con-like {
+        position: absolute; /* Revert to absolute for specific positioning on smaller screens */
+        bottom: 10px; /* Adjust as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for true centering */
+        right: auto; /* Ensure right property doesn't interfere */
+    }
+
+    .buttons-wrapper {
+        justify-content: center;
+        /* Center buttons when stacked vertically */
+        padding-bottom: 60px; /* Add space for the heart below */
+        flex-wrap: wrap; /* Allow buttons to wrap if space is constrained */
+    }
+
+
+    /*Footer*/
+    .footer {
         padding: 15px 0px;
         flex-direction: column-reverse;
     }
-    .footer p{
+
+    .footer p {
         margin: 0;
         padding: 0;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .home{
+    .home {
         width: 100%;
     }
-    .ilustracao-principal{
+
+    .ilustracao-principal {
         width: 100%;
         padding: 10px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 1.4em;
     }
 
@@ -1262,77 +1614,100 @@ p{
         font-size: 1rem;
         margin-right: 40px;
     }
-    .button-github{
+
+    .button-github {
         font-size: 1rem;
     }
 
     /*Sobre*/
-    .sobre{
+    .sobre {
         width: 90%;
     }
-    .button-cv{
+
+    .button-cv {
         font-size: 0.9rem;
         width: 120px;
     }
 
     /*Habilidades*/
-    .habilidades{
+    .habilidades {
         width: 90%;
     }
-    .habilidades-texto{
+
+    .habilidades-texto {
         font-size: 1.3rem;
     }
-    .habilidades-cards{
+
+    .habilidades-cards {
         padding-top: 280px;
     }
-    .card{
+
+    .card {
         width: 135px;
         height: 135px;
+    }
+
+    /* Adaptação para SVG em telas muito pequenas */
+    .card9 img,
+    .card10 img {
+        width: 5.5em;
+        /* Ajuste para telas muito pequenas */
+        height: 5.5em;
+        /* Ajuste para telas muito pequenas */
     }
 
     /*Projetos*/
     .projeto-texto {
         padding: 20px;
     }
-    .projeto-imagem{
-        width: 30%;/**/
+
+    .projeto-imagem {
+        width: 100%;
+        /* Image takes full width */
+        max-height: 200px;
+        /* Further limit image height for very small screens */
     }
-    .projeto-texto p{
+
+    .projeto-texto p {
         font-size: 1.1rem;
     }
-    .projeto-texto p:nth-child(2){
+
+    .projeto-texto p:nth-child(2) {
         font-size: 0.9rem;
     }
-    .con-like{
-       right: 0px;
-       width: 35px;
-       height: 35px;
-       bottom: 35px;
+
+    .con-like {
+        width: 35px;
+        height: 35px;
+        bottom: 5px; /* Adjusted from 35px */
     }
-    .button-projeto{
+
+    .button-projeto {
         font-size: 0.9rem;
         width: 110px;
     }
 
     /*Footer*/
-    .footer-bg{
+    .footer-bg {
         font-size: 1.25rem;
     }
-    .nome-b{
+
+    .nome-b {
         font-size: 1.25rem;
     }
 }
-
 
 /*Scroll*/
 ::-webkit-scrollbar {
-	width: 5px;
-	background-color: rgb(35, 38, 41);
+    width: 5px;
+    background-color: rgb(35, 38, 41);
 }
+
 ::-webkit-scrollbar-thumb {
-	background-color: #1C92FF;
+    background-color: #1C92FF;
     border-radius: 20px;
 }
+
 ::-webkit-scrollbar-track {
-	background-color: transparent;
+    background-color: transparent;
 }
